@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejeciciodoscuatro.MainPage">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="Photo" Source="noimagen.png"></Image>
+        <Label Text="Nombre" Grid.Row="1" FontSize="20"/>
+        <Entry x:Name="txtNombre" Grid.Row="2" Placeholder="Nombre de la foto"/>
+        <Label Text="Descripcion" Grid.Row="3" FontSize="20"/>
+        <Entry x:Name="txtDescripcion" Grid.Row="4" Placeholder="Descripcion de la foto"/>
+        <Button x:Name="TakePhoto"
+                Grid.Row="5"
+                Text="Tomar Foto"/>
+        <Button x:Name="SearchPhoto"
+                Grid.Row="6"
+                Text="Buscar Foto"/>
+    </Grid>
+
+</ContentPage>
