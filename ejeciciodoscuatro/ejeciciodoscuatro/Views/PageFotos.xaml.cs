@@ -15,8 +15,12 @@ namespace ejeciciodoscuatro.Views
         public PageFotos()
         {
             InitializeComponent();
-            var fotoList = App.SQLiteBD.GetFotoAsync();
-            if (fotoList!=null)
+            cargarList();
+        }
+        public async void cargarList()
+        {
+            var fotoList = await App.SQLiteBD.GetFotoAsync();
+            if (fotoList != null)
             {
                 lstFotos.ItemsSource = fotoList;
             }
